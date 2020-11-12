@@ -4,7 +4,7 @@
     <h1>${this._segments}</h1>
     `;
 
-    customElements.define('com-sap-sample-helloworld1', class WidgetTemplate extends HTMLElement {
+    class RadarComponent extends HTMLElement {
 
 
 		constructor() {
@@ -60,8 +60,8 @@
 
         redraw(){
         }
-    
-    
-    });
+    };
+
+    customElements.define('pwc_radar', RadarComponent);
         
 })();
